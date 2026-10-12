@@ -12,7 +12,7 @@ En el problema de referencia, contar 46 bolsas de 15 canicas y 5 frascos de 60 r
 
 ## Para mi libreta
 
-Tres formatos para copiar el resumen de distributiva y factor común: flechas de ida y vuelta, comparación en dos columnas y pasos numerados. Se puede elegir números o letras, cantidad de texto, color y título. Incluye sumas y restas. Permite copiar, descargar e imprimir el esquema. Las preferencias y las ideas de la estudiante se guardan localmente. El botón de petición prepara un texto para pegarlo en el chat de Codex; no existe un servicio de chat o IA en la aplicación.
+Tres formatos para copiar el resumen de distributiva y factor común: flechas de ida y vuelta, comparación en dos columnas y pasos numerados. Se puede elegir números o letras, cantidad de texto, color y título. Incluye sumas y restas. Permite copiar, descargar e imprimir el esquema. Las preferencias y las ideas de la estudiante se guardan localmente. Todos los esquemas incluyen teoría resumida, con una idea por frase y la justificación de ambos procedimientos. El botón «Enviar mi idea por Mensajes» abre el menú nativo de compartir de Safari (Web Share API): la estudiante elige Mensajes, selecciona al contacto que hará el cambio en Codex y completa el envío. La aplicación no envía mensajes al escribir ni confirma una entrega; ofrece un borrador y copia como alternativa. El destinatario puede llevar la petición a Codex. No existe un servicio de chat o IA en la aplicación.
 
 ## Progreso y compartir
 
