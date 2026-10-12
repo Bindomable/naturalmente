@@ -6,11 +6,17 @@ Aplicación educativa estática en español para practicar el tema de números n
 
 Seis bloques de explicación, una actividad participativa por bloque, comprobaciones de comprensión y ejercicios generados con números nuevos. Sesiones de 6 o 12 ejercicios, de un bloque o mezclados. Pistas, reintentos y soluciones explicadas.
 
-El alcance se limita a los apuntes facilitados: naturales (incluido el 0), sistema decimal y valor posicional; propiedades conmutativa y asociativa; distributiva y factor común; jerarquía de operaciones; problemas de grupos iguales. Solo se introducen cuadrados y raíces exactas sencillas para comprender los ejemplos de jerarquía. No se publican las fotografías ni datos bancarios de los apuntes, ni información personal de la estudiante.
+El alcance se limita a los apuntes facilitados: naturales (incluido el 0), sistema decimal y valor posicional; propiedades conmutativa y asociativa; distributiva y factor común; jerarquía de operaciones; problemas de grupos iguales. Las potencias al cuadrado y las raíces exactas sencillas se conservan en una zona opcional, con accesos independientes a teoría y ejercicios. No aparecen en el bloque 5 ni en las sesiones normales de clase. No se publican las fotografías ni datos bancarios de los apuntes, ni información personal de la estudiante.
 
 En el problema de referencia, contar 46 bolsas de 15 canicas y 5 frascos de 60 requiere multiplicar: `50 + 46 × 15 + 5 × 60 = 1040`. La aplicación explica la diferencia respecto al planteamiento manuscrito con divisiones.
 
+## Para mi libreta
+
+Tres formatos para copiar el resumen de distributiva y factor común: flechas de ida y vuelta, comparación en dos columnas y pasos numerados. Se puede elegir números o letras, cantidad de texto, color y título. Incluye sumas y restas. Permite copiar, descargar e imprimir el esquema. Las preferencias y las ideas de la estudiante se guardan localmente. El botón de petición prepara un texto para pegarlo en el chat de Codex; no existe un servicio de chat o IA en la aplicación.
+
 ## Progreso y compartir
+
+La práctica de clase y la opcional tienen sesiones independientes y estadísticas separadas. Los registros antiguos de jerarquía no permitían distinguir potencias y raíces: se conservan como histórico aparte; si una sesión antigua contiene estos contenidos, se cierra conservando los ejercicios terminados.
 
 El progreso y la sesión en curso se guardan en `localStorage` del navegador. Se contabiliza una vez cada ejercicio terminado. Se distinguen aciertos al primer intento sin ayuda, resueltos después de pedir ayuda o reintentar, y soluciones consultadas. Repasar una explicación durante un ejercicio cuenta como ayuda.
 
@@ -37,10 +43,11 @@ GitHub Pages publica directamente los archivos estáticos de la rama `main`. En 
 - `index.html`: estructura principal y navegación.
 - `style.css`: diseño responsive, accesibilidad de foco y versión para imprimir.
 - `content.js`: explicaciones y generador de ejercicios.
+- `notebook.js`: esquemas y personalización para la libreta.
 - `app.js`: interacción, corrección, progreso y compartir.
 - `tests/content.test.cjs`: comprobaciones del generador y de los cálculos.
 
-Ejecutar los tests con `node tests/content.test.cjs`.
+Ejecutar los tests con `node tests/content.test.cjs` y `node tests/progress.test.cjs`.
 
 ## Referencias del nivel
 
