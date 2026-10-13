@@ -10,6 +10,10 @@ El alcance se limita a los apuntes facilitados: naturales (incluido el 0), siste
 
 En el problema de referencia, contar 46 bolsas de 15 canicas y 5 frascos de 60 requiere multiplicar: `50 + 46 × 15 + 5 × 60 = 1040`. La aplicación explica la diferencia respecto al planteamiento manuscrito con divisiones.
 
+## Dificultad
+
+La práctica de clase ofrece Repaso, Aplicar y Reto, con Reto seleccionado por defecto. Los retos combinan propiedades, signos, varios términos y agrupaciones anidadas. Los problemas incluyen grupos dentro de grupos, reservas, entregas, comparaciones y repartos exactos. Todos los resultados e intermedios permanecen en los naturales; potencias y raíces siguen fuera de la práctica habitual. El resumen desglosa el número de ejercicios y aciertos por nivel. «Cambiar nivel» permite preparar otra sesión; los ejercicios terminados se conservan.
+
 ## Para mi libreta
 
 Tres formatos para copiar el resumen de distributiva y factor común: flechas de ida y vuelta, comparación en dos columnas y pasos numerados. Se puede elegir números o letras, cantidad de texto, color y título. Incluye sumas y restas. Permite copiar, descargar e imprimir el esquema. Las preferencias y las ideas de la estudiante se guardan localmente. Todos los esquemas incluyen teoría resumida, con una idea por frase y la justificación de ambos procedimientos. El botón «Enviar mi idea por Mensajes» abre el menú nativo de compartir de Safari (Web Share API): la estudiante elige Mensajes, selecciona al contacto que hará el cambio en Codex y completa el envío. La aplicación no envía mensajes al escribir ni confirma una entrega; ofrece un borrador y copia como alternativa. El destinatario puede llevar la petición a Codex. No existe un servicio de chat o IA en la aplicación.
@@ -43,11 +47,12 @@ GitHub Pages publica directamente los archivos estáticos de la rama `main`. En 
 - `index.html`: estructura principal y navegación.
 - `style.css`: diseño responsive, accesibilidad de foco y versión para imprimir.
 - `content.js`: explicaciones y generador de ejercicios.
+- `challenges.js`: generador de retos de varios pasos dentro del mismo temario.
 - `notebook.js`: esquemas y personalización para la libreta.
 - `app.js`: interacción, corrección, progreso y compartir.
 - `tests/content.test.cjs`: comprobaciones del generador y de los cálculos.
 
-Ejecutar los tests con `node tests/content.test.cjs` y `node tests/progress.test.cjs`.
+Ejecutar los tests con `node tests/content.test.cjs` y `node tests/progress.test.cjs`, `node tests/challenges.test.cjs` y `node tests/notebook.test.cjs`.
 
 ## Referencias del nivel
 

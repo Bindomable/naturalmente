@@ -50,4 +50,4 @@ function question(topic,variant=rand(0,2)) {
  if(variant===1)return choose(`Hay ${a} cajas con ${b} bolas cada una y ${c} cajas con 10 bolas cada una. ¿Cómo cuentas todas las bolas?`,[`${a} × ${b} + ${c} × 10`,`${a} ÷ ${b} + ${c} ÷ 10`,`${a} + ${b} + ${c} + 10`],`${a} × ${b} + ${c} × 10`,'Multiplicamos los grupos por su contenido y sumamos ambos resultados.','¿Cuántas bolas aporta cada caja?');
  return numeric('Ángel tiene 50 canicas, 46 bolsas con 15 canicas cada una y 5 frascos con 60 canicas cada uno. ¿Cuántas canicas tiene en total?',1040,'50 + 46 × 15 + 5 × 60 = 50 + 690 + 300 = 1040 canicas.','Bolsas y frascos contienen canicas: multiplica para contar su contenido.',['50 + 690 + 300','740 + 300','1040 canicas']);
 }
-if(typeof module!=='undefined')module.exports={TOPICS,OPTIONAL_TOPICS,hasOptionalContent,question};
+if(typeof module!=='undefined')module.exports={TOPICS,OPTIONAL_TOPICS,hasOptionalContent,question,rand};
