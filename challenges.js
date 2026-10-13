@@ -1,5 +1,6 @@
 'use strict';
 // Los retos combinan las mismas ideas de los apuntes; todas las cuentas quedan en naturales.
+const MONEY_FACTORY=typeof module!=='undefined'?require('./money-problems.js').moneyProblem:moneyProblem;
 const CHALLENGE_BASE=typeof module!=='undefined'?require('./content.js'):{rand,question};
 function challengeQuestion(topic,variant=CHALLENGE_BASE.rand(0,5),difficulty='reto') {
  const r=CHALLENGE_BASE.rand,hard=difficulty==='reto',a=r(hard?6:3,hard?18:9),b=r(hard?12:10,hard?35:18),c=r(3,9),d=r(2,5);variant%=6;
@@ -59,6 +60,7 @@ function challengeQuestion(topic,variant=CHALLENGE_BASE.rand(0,5),difficulty='re
 }
 function practiceQuestion(topic,variant,difficulty='reto') {
  if(topic==='potencias-raices'||difficulty==='repaso')return {...CHALLENGE_BASE.question(topic,variant%3),difficulty:topic==='potencias-raices'?'opcional':'repaso'};
+ if(topic==='problemas'&&difficulty==='reto'&&variant%2===0)return MONEY_FACTORY(Math.floor(variant/2),difficulty);
  return challengeQuestion(topic,difficulty==='aplicar'?variant%3:variant,difficulty);
 }
 if(typeof module!=='undefined')module.exports={challengeQuestion,practiceQuestion};

@@ -12,7 +12,7 @@ En el problema de referencia, contar 46 bolsas de 15 canicas y 5 frascos de 60 r
 
 ## Dificultad
 
-La práctica de clase ofrece Repaso, Aplicar y Reto, con Reto seleccionado por defecto. Los retos combinan propiedades, signos, varios términos y agrupaciones anidadas. Los problemas incluyen grupos dentro de grupos, reservas, entregas, comparaciones y repartos exactos. Todos los resultados e intermedios permanecen en los naturales; potencias y raíces siguen fuera de la práctica habitual. El resumen desglosa el número de ejercicios y aciertos por nivel. «Cambiar nivel» permite preparar otra sesión; los ejercicios terminados se conservan.
+La práctica de clase ofrece Repaso, Aplicar y Reto, con Reto seleccionado por defecto. Los retos combinan propiedades, signos, varios términos y agrupaciones anidadas. Los problemas incluyen grupos dentro de grupos, reservas, entregas, comparaciones y repartos exactos. Se usan también ingresos, gastos y devoluciones agrupados en una cuenta, según la nueva referencia del cuaderno. Tres de las seis variantes del bloque de problemas en Reto son de dinero: primero se elige el planteamiento y después se introduce el resultado. Un error en cualquiera de los pasos impide contabilizar el ejercicio como acierto sin ayuda. Los importes son inventados; no se transcriben cifras dudosas de la foto. Todos los resultados e intermedios permanecen en los naturales; potencias y raíces siguen fuera de la práctica habitual. El resumen desglosa el número de ejercicios y aciertos por nivel. «Cambiar nivel» permite preparar otra sesión; los ejercicios terminados se conservan.
 
 ## Para mi libreta
 
@@ -47,6 +47,7 @@ GitHub Pages publica directamente los archivos estáticos de la rama `main`. En 
 - `index.html`: estructura principal y navegación.
 - `style.css`: diseño responsive, accesibilidad de foco y versión para imprimir.
 - `content.js`: explicaciones y generador de ejercicios.
+- `money-problems.js`: problemas de ingresos y gastos con planteamiento y cálculo.
 - `challenges.js`: generador de retos de varios pasos dentro del mismo temario.
 - `notebook.js`: esquemas y personalización para la libreta.
 - `app.js`: interacción, corrección, progreso y compartir.

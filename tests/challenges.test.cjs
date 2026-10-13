@@ -32,3 +32,4 @@ for(const difficulty of ['aplicar','reto'])for(const t of TOPICS)for(let variant
 }
 assert.equal(practiceQuestion('problemas',0,'repaso').difficulty,'repaso');assert.equal(practiceQuestion('potencias-raices',0,'reto').difficulty,'opcional');
 console.log(`${checked} retos verificados: cuentas, intermedios naturales, problemas de varios pasos y exclusión de contenidos opcionales.`);
+module.exports={evaluate};
